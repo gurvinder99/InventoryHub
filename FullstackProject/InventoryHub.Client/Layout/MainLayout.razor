@@ -1,0 +1,20 @@
+﻿@inherits LayoutComponentBase
+@using InventoryHub.Client.Shared
+
+<div class="app-container">
+    <NavMenu />
+    <div class="main-content">
+        @Body
+    </div>
+</div>
+
+<style>
+    .app-container {
+        display: flex;
+    }
+
+    .main-content {
+        flex-grow: 1;
+        padding: 20px;
+    }
+</style>
